@@ -29,34 +29,19 @@ img {
 h1 {
   font-size: 40px;
   font-weight: 900;
-  margin-bottom: 20px;
   mix-blend-mode: color-burn;
   color: #9b1200;
 }
 
-/* nav a {
-  padding-left: 15px;
-} */
-
-.desktop-navigation,
-nav .logo {
-  display: none;
-
-  /* list-style: none;
-  display: inline-block; */
-}
-
 #desktop-toolbar {
   display: none;
-
-  /* height: 100px; */
 }
 
 .display-on {
   display: block;
 }
 
-a.active {
+.mobile-menu a.active {
   color: #ec5242;
   font-weight: 900;
   border-bottom: #ec5242 2px solid;
@@ -67,17 +52,19 @@ a.active {
 }
 
 .date {
-  font-size: 32px;
+  font-size: 28px;
   color: #585858;
   font-weight: 900;
 }
 
 .annotation {
-  background-color: #f7f7f7;
-  border: #fff 2px solid;
+  background-color: #f1f1f1e7;
+  border: #fff 3px solid;
   padding: 10px;
-  font-size: 16px;
-  margin: 25px 0;
+  font-size: 14px;
+  margin: 20px 0;
+  line-height: 1.6em;
+  font-weight: 600;
 }
 
 .subtitle {
@@ -178,7 +165,14 @@ section > hr {
 }
 
 #adress {
-  height: 50px;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #585858;
+}
+
+#adress img {
+  height: 20px;
 }
 
 .latto {
@@ -187,16 +181,15 @@ section > hr {
 
 #headline {
   /* color: #585858; */
-  padding: 105px 20px 80px 20px;
+  color: #353535;
+  padding: 105px 20px 85px 20px;
   margin-top: -75px;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  background-image: linear-gradient(#ebebebab, rgba(235, 235, 235, 0.863)), url(./images/pngwing.com.png), linear-gradient(#ebebeb71, rgba(235, 235, 235, 0.671)), url(./images/pexels-李进-3172740.jpg);
+  background-image: linear-gradient(#eeeeeea8, rgba(243, 243, 243, 0.904)), url(./images/pngwing.com.png), linear-gradient(#f1f1f1b0, rgba(240, 240, 240, 0.856)), url(./images/pexels-李进-3172740.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: cover, cover, cover, cover;
-
-  /* min-height: 100vh; */
 }
 
 #program {
@@ -213,8 +206,6 @@ section > hr {
 
 .program article {
   background: #a1a1a144;
-
-  /* background-size; */
   display: grid;
   grid-template-columns: 3fr 5fr 8fr;
   align-items: center;
@@ -234,7 +225,7 @@ section > hr {
   color: #fff;
   padding: 10px 20px;
   line-height: 1.5em;
-  width: 320px;
+  width: min(100%, 320px);
   font-size: 18px;
   margin-top: 30px;
 }
@@ -254,11 +245,11 @@ section > hr {
 }
 
 .program img {
-  /* height: 15vw; */
   width: 100%;
 }
 
 .program h3 {
+  font-size: 18px;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -276,7 +267,6 @@ section > hr {
 }
 
 #coaches article {
-  /* height: 120px; */
   display: grid;
   grid-template-columns: 30vw auto;
   grid-template-rows: auto auto auto auto;
@@ -294,8 +284,6 @@ section > hr {
   background-image: url(./icons/chessboard-black.png);
   background-repeat: no-repeat;
   background-size: 50%;
-
-  /* height: 120px; */
 }
 
 #coaches article hr {
