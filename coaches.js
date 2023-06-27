@@ -64,4 +64,4 @@ for (let i = 0; i < coachesData.length; i += 1) {
   coachCard.appendChild(coachRespons);
 
   coachesSection.appendChild(coachCard);
-};
+}
