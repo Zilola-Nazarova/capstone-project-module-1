@@ -33,6 +33,11 @@ h1 {
   color: #9b1200;
 }
 
+.desktop-navigation,
+nav .logo {
+  display: none;
+}
+
 #desktop-toolbar {
   display: none;
 }
