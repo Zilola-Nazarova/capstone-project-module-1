@@ -35,4 +35,33 @@ const coachesData = [
     responsibilities: 'Christina will introduce you to the career development process and different professional planning tools. You will create a career plan that will help you move smoothly from high school to further education or employment.',
     photo: './images/speaker-christina.jpg',
   },
-]
+];
+
+for (let i = 0; i < coachesData.length; i += 1) {
+  const coachesSection = document.getElementById('coaches');
+
+  const coachCard = document.createElement('article');
+  coachCard.id = `coach${i}`;
+
+  const coachPhoto = document.createElement('img');
+  coachPhoto.alt = `Coach#${i}`;
+  coachPhoto.src = coachesData[i].photo;
+  coachCard.appendChild(coachPhoto);
+
+  const coachName = document.createElement('h3');
+  coachName.textContent = coachesData[i].name;
+  coachCard.appendChild(coachName);
+
+  const coachPosition = document.createElement('h4');
+  coachPosition.textContent = coachesData[i].position;
+  coachCard.appendChild(coachPosition);
+
+  const divider = document.createElement('hr');
+  coachCard.appendChild(divider);
+
+  const coachRespons = document.createElement('p');
+  coachRespons.textContent = coachesData[i].responsibilities;
+  coachCard.appendChild(coachRespons);
+
+  coachesSection.appendChild(coachCard);
+};
