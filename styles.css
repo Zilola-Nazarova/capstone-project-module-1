@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  height: 75px;
+  padding: 25px 10px 20px 30px;
+  display: flex;
+}
+
+img {
+  max-height: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  mix-blend-mode: color-burn;
+  color: #9b1200;
+}
+
+/* nav a {
+  padding-left: 15px;
+} */
+
+.desktop-navigation,
+nav .logo {
+  display: none;
+
+  /* list-style: none;
+  display: inline-block; */
+}
+
+#desktop-toolbar {
+  display: none;
+
+  /* height: 100px; */
+}
+
+.display-on {
+  display: block;
+}
+
+a.active {
+  color: #ec5242;
+  font-weight: 900;
+  border-bottom: #ec5242 2px solid;
+}
+
+.coral {
+  color: #ec5242;
+}
+
+.date {
+  font-size: 32px;
+  color: #585858;
+  font-weight: 900;
+}
+
+.annotation {
+  background-color: #f7f7f7;
+  border: #fff 2px solid;
+  padding: 10px;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+p.subtitle {
+  font-weight: 700;
+}
+
+q {
+  quotes: '"' '"';
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr 1fr auto;
+  column-gap: 30px;
+  row-gap: 5px;
+  padding: 30px 30px;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer img {
+  height: 12px;
+}
+
+footer > img {
+  grid-area: 1 / 1 / 5 / 2;
+  width: 100%;
+  height: auto;
+}
+
+footer > p,
+footer > address {
+  font-size: 13px;
+}
+
+section > hr {
+  margin: auto;
+  width: 50px;
+  border: #ec5242 solid 1px;
+  margin-bottom: 23px;
+}
+
+.mobile-menu {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(#ebebebab, rgba(235, 235, 235, 0.863)), url(./images/pngwing.com.png), linear-gradient(#ebebeb71, rgba(235, 235, 235, 0.671)), url(./images/pexels-李进-3172740.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: cover, cover, cover, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #585858;
+  background-color: #d3d3d3a2;
+  border: 1px #fff solid;
+  width: 100%;
+  margin: 0 25%;
+  padding: 40px 30px;
+}
+
+.mobile-menu a {
+  color: #585858;
+}
+
+.mobile-menu > a {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  height: 30px;
+}
+
+.mobile-menu img {
+  height: 100%;
+}
+
+#adress {
+  height: 50px;
+}
+
+.latto {
+  font-family: 'Lato', sans-serif;
+}
+
+#headline {
+  /* color: #585858; */
+  padding: 105px 20px 80px 20px;
+  margin-top: -75px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-image: linear-gradient(#ebebebab, rgba(235, 235, 235, 0.863)), url(./images/pngwing.com.png), linear-gradient(#ebebeb71, rgba(235, 235, 235, 0.671)), url(./images/pexels-李进-3172740.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: cover, cover, cover, cover;
+
+  /* min-height: 100vh; */
+}
+
+#program {
+  background: #272a33;
+  background-image: url(./images/program-opacity25.png);
+  background-size: 40%;
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program article {
+  background: #a1a1a144;
+
+  /* background-size; */
+  display: grid;
+  grid-template-columns: 3fr 5fr 8fr;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding: 15px;
+}
+
+.program .see-program {
+  display: none;
+}
+
+.program .join-tiace {
+  display: block;
+  background-color: #ec5242;
+  text-align: center;
+  color: #fff;
+  padding: 10px 20px;
+  line-height: 1.5em;
+  width: 320px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.program button:hover {
+  font-weight: 700;
+}
+
+.program p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.program h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+.program img {
+  /* height: 15vw; */
+  width: 100%;
+}
+
+.program h3 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#coaches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 15px;
+}
+
+#coaches > hr {
+  margin-bottom: 30px;
+}
+
+#coaches article {
+  /* height: 120px; */
+  display: grid;
+  grid-template-columns: 30vw auto;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 20px;
+  row-gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+#coaches article img {
+  grid-area: 1 / 1 / 5 / 2;
+  width: 100%;
+  padding-top: 11%;
+  padding-left: 11%;
+  background-image: url(./icons/chessboard-black.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+  /* height: 120px; */
+}
+
+#coaches article hr {
+  display: block;
+  border: 1px #d3d3d3 solid;
+  height: 0;
+  width: 30px;
+}
+
+#coaches article h4 {
+  color: #ec5242;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#coaches article h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#partners {
+  background-color: #414246;
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  color: #fff;
+  padding: 40px 15px;
+}
+
+#partners h2 {
+  margin-bottom: 13px;
+}
+
+#partners ul {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.partners-list li {
+  height: 40px;
+
+  /* margin: 20px; */
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
