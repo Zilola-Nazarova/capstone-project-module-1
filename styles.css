@@ -684,10 +684,6 @@ section > hr {
     height: 100%;
   }
 
-  #program article:hover {
-    outline: 2px #fff solid;
-  }
-
   #program img {
     width: 50%;
     min-width: 60px;
@@ -748,6 +744,10 @@ section > hr {
 
   #coaches article.hidden {
     display: grid;
+  }
+
+  #program article:hover {
+    outline: 2px #fff solid;
   }
 
   #partners.hidden,
@@ -818,9 +818,11 @@ section > hr {
     text-align: center;
     font-size: 40px;
   }
+
   #headline.about-centered h1 span {
     font-size: 43px;
   }
+
   #headline.about-centered h1 hr {
     width: 25px;
     margin: 15px auto;
