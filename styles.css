@@ -398,6 +398,11 @@ section > hr {
     color: #353535;
   }
 
+  .desktop-navigation a.active {
+    color: #ec5242;
+    font-weight: 900;
+  }
+
   nav,
   footer,
   #partners,

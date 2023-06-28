@@ -6,3 +6,10 @@ menuLinks.forEach((element) => {
     element.classList.add('active');
   }
 });
+
+const navLinks = document.querySelectorAll('.desktop-navigation a');
+navLinks.forEach((element) => {
+  if (url === `${element.href}#` || url === element.href) {
+    element.classList.add('active');
+  }
+});
