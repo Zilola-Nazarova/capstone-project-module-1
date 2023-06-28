@@ -263,6 +263,28 @@ section > hr {
   text-overflow: ellipsis;
 }
 
+#more {
+  display: block;
+  margin: -15px auto 40px;
+  border: 2px #d3d3d3 solid;
+  padding: 15px;
+  width: calc(100% - 30px);
+  background-color: #fff;
+  color: #272a33;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+#more img {
+  height: 10px;
+  margin-left: 3%;
+}
+
+#more.hidden {
+  display: none;
+}
+
 #coaches {
   display: flex;
   flex-direction: column;
@@ -667,5 +689,9 @@ section > hr {
   #partners.hidden,
   footer.hidden {
     display: grid;
+  }
+
+  #more {
+    display: none;
   }
 }
