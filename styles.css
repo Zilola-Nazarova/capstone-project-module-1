@@ -99,9 +99,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 30px;
+  padding: 30px 20px;
   align-items: center;
   height: 140px;
+}
+
+footer.about {
+  padding: 30px 30px;
 }
 
 footer a {
@@ -339,7 +343,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   color: #fff;
-  padding: 40px 15px;
+  padding: 30px 20px;
 }
 
 #partners h2 {
@@ -356,12 +360,12 @@ section > hr {
   justify-content: space-around;
   align-items: center;
   column-gap: 25px;
-  row-gap: 15px;
+  row-gap: 18px;
 }
 
 .partners-list a {
   color: #d3d3d3;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -425,21 +429,21 @@ section > hr {
 
 #logo-design,
 #past-bootcamps {
-  padding: 40px 30px 30px;
+  padding: 40px 30px 40px;
   text-align: center;
   position: relative;
   line-height: 1.4em;
 }
 
-#about-page #logo-design hr,
-#about-page #past-bootcamps hr {
-  width: 25px;
+#logo-design hr,
+#past-bootcamps hr {
+  width: 30px;
   margin: 15px auto;
 }
 
 #about-page #logo-design img {
   width: 100%;
-  margin: 35px auto 10px;
+  margin: 45px auto 0;
   border: 2px #eee solid;
   padding: 25px 60px 30px;
 }
@@ -451,12 +455,9 @@ section > hr {
   gap: 15px;
 }
 
-#logo-design .grey-wide {
+.grey-wide {
   width: 100vw;
   border: 1px solid #eee;
-  margin: 0 -30px 0;
-  position: absolute;
-  bottom: 0;
 }
 
 #past-bootcamps li {
@@ -483,6 +484,14 @@ section > hr {
 #about-page #past-bootcamps h3 {
   font-size: 26px;
   margin-top: 12px;
+}
+
+#about-page #partners h2 {
+  color: #fff;
+}
+
+#about-page hr.hidden {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -543,7 +552,8 @@ section > hr {
   #headline,
   #program,
   #coaches,
-  #desktop-toolbar {
+  #desktop-toolbar,
+  section {
     padding-right: calc(20% - 120px);
     padding-left: calc(20% - 120px);
   }
@@ -690,6 +700,7 @@ section > hr {
 
   #partners ul {
     margin-top: 0;
+    row-gap: 25px;
   }
 
   #coaches article.hidden {
@@ -703,5 +714,70 @@ section > hr {
 
   #more {
     display: none;
+  }
+
+  #headline.about-centered {
+    padding-bottom: 70px;
+  }
+
+  #headline.about-centered * {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #headline.about-centered,
+  #logo-design,
+  #past-bootcamps,
+  footer.about {
+    padding-right: calc(20% - 120px);
+    padding-left: calc(20% - 120px);
+  }
+
+  .grey-wide {
+    position: static;
+    width: 100vw;
+    margin: 0;
+  }
+
+  #about-page #logo-design img {
+    margin: 50px auto 0;
+    width: 60%;
+  }
+
+  #past-bootcamps ul {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #past-bootcamps li {
+    height: 200px;
+    width: 45%;
+  }
+
+  footer > div {
+    width: 55vw;
+  }
+
+  footer.about {
+    background-color: #383838;
+  }
+  
+  footer.about * {
+    color: #fff;
+  }
+
+  #about-page #partners.hidden {
+    display: none;
+  }
+
+  #headline.about-centered h1 hr {
+    width: 25px;
+    margin: 15px auto;
+    border: #ec5242 solid 1px;
   }
 }
