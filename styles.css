@@ -524,8 +524,8 @@ section > hr {
   #headline,
   #program,
   #coaches {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: calc(20% - 120px);
+    padding-left: calc(20% - 120px);
   }
 
   nav .logo {
@@ -662,40 +662,10 @@ section > hr {
   #coaches article img {
     background-image: url(./icons/chessboard-grey.png);
   }
-}
 
-@media only screen and (min-width: 860px) {
-  nav,
-  footer,
-  #partners,
-  #headline,
-  #program,
-  #coaches {
-    padding-right: 7%;
-    padding-left: 7%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  nav,
-  footer,
-  #partners,
-  #headline,
-  #program,
-  #coaches {
-    padding-right: 12%;
-    padding-left: 12%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  nav,
-  footer,
-  #partners,
-  #headline,
-  #program,
-  #coaches {
-    padding-right: 15%;
-    padding-left: 15%;
+  #coaches article.hidden,
+  #partners.hidden,
+  footer.hidden {
+    display: grid;
   }
 }
