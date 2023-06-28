@@ -38,6 +38,10 @@ nav .logo {
   display: none;
 }
 
+nav .campaign {
+  display: none;
+}
+
 #desktop-toolbar {
   display: none;
 }
@@ -99,20 +103,20 @@ footer {
   row-gap: 5px;
   padding: 30px 30px;
   align-items: center;
+  height: 160px;
 }
 
 footer a {
   text-decoration: underline;
 }
 
-footer img {
-  height: 12px;
-}
-
 footer > img {
   grid-area: 1 / 1 / 5 / 2;
-  width: 100%;
-  height: auto;
+
+  /* width: 100%;
+  height: auto; */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 footer > p,
@@ -169,14 +173,14 @@ section > hr {
   height: 100%;
 }
 
-#adress {
+.address {
   margin-top: 5px;
   font-size: 17px;
   font-weight: 600;
   color: #585858;
 }
 
-#adress img {
+.address img {
   height: 20px;
 }
 
@@ -185,7 +189,6 @@ section > hr {
 }
 
 #headline {
-  /* color: #585858; */
   color: #353535;
   padding: 105px 20px 85px 20px;
   margin-top: -75px;
@@ -230,7 +233,7 @@ section > hr {
   color: #fff;
   padding: 10px 20px;
   line-height: 1.5em;
-  width: min(100%, 320px);
+  width: min(100%, 320px);  /* stylelint-disable-line */
   font-size: 18px;
   margin-top: 30px;
 }
@@ -342,4 +345,237 @@ section > hr {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .program .join-tiace {
+    display: none;
+  }
+
+  .footer-mobile-img {
+    display: none;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  nav {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 5px 5px #c2c2c2ad;
+    position: relative;
+    z-index: 2;
+  }
+
+  .desktop-navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    gap: 8%;
+    flex: 1;
+    margin-right: 5%;
+  }
+
+  .desktop-navigation li {
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  nav .campaign {
+    display: block;
+    color: #ec5242;
+    border: 3px #ec5242 solid;
+    padding: 6px;
+  }
+
+  .desktop-navigation a {
+    color: #353535;
+  }
+
+  nav,
+  footer,
+  #partners,
+  #headline,
+  #program,
+  #coaches {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  nav .logo {
+    display: flex;
+    height: 100%;
+  }
+
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  footer {
+    height: 120px;
+  }
+
+  footer img {
+    height: 100%;
+    width: auto;
+  }
+
+  #desktop-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 23px;
+    height: 35px;
+    padding: 7px 0;
+    padding-right: 15%;
+    background-color: #414246;
+    font-size: 15px;
+  }
+
+  #desktop-toolbar img {
+    height: 100%;
+  }
+
+  #desktop-toolbar a {
+    color: #fff;
+  }
+
+  .program .see-program {
+    display: flex;
+  }
+
+  #headline {
+    margin-top: 0;
+  }
+
+  #headline h1 {
+    width: 70%;
+    font-size: 48px;
+  }
+
+  #headline p {
+    width: 70%;
+  }
+
+  #headline q {
+    font-size: 32px;
+  }
+
+  #program {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 60px;
+  }
+
+  #program article {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 3fr;
+    gap: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    align-items: center;
+    width: unset;
+    height: 100%;
+  }
+
+  #program img {
+    width: 50%;
+    min-width: 60px;
+    max-width: 70px;
+    margin: auto;
+  }
+
+  #program h2 {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+
+  #program h3 {
+    font-size: 20px;
+  }
+
+  #program hr {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+
+  #program .see-program {
+    display: block;
+    width: fit-content;
+    grid-area: 4 / 1 / 5 / 6;
+    color: #fff;
+    margin: 50px auto 20px auto;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+  }
+
+  #coaches {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  #coaches article {
+    grid-template-columns: 30% auto;
+  }
+
+  #coaches h2 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  #coaches > hr {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  #coaches article img {
+    background-image: url(./icons/chessboard-grey.png);
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  nav,
+  footer,
+  #partners,
+  #headline,
+  #program,
+  #coaches {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  nav,
+  footer,
+  #partners,
+  #headline,
+  #program,
+  #coaches {
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav,
+  footer,
+  #partners,
+  #headline,
+  #program,
+  #coaches {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
 }
