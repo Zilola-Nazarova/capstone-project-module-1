@@ -1,3 +1,31 @@
+@font-face {
+  font-family: Cocogoose;
+  src: url(./fonts/cocogoose/Cocogoose\ Pro-trial.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Light-trial.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Ultralight-trial.ttf.ttf);
+  font-weight: 200;
+}
+
+.cocogoose {
+  font-family: 'Cocogoose', 'Lato', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +54,18 @@ img {
   max-height: 100%;
 }
 
-h1 {
+h1,
+.year {
   font-size: 40px;
   font-weight: 900;
   mix-blend-mode: color-burn;
   color: #9b1200;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.year {
+  margin-top: -10px;
 }
 
 .desktop-navigation,
@@ -410,6 +445,7 @@ section > hr {
   mix-blend-mode: unset;
   margin-top: 10px;
   font-size: 32px;
+  text-align: center;
 }
 
 .about-centered .about-program {
@@ -648,6 +684,10 @@ section > hr {
     height: 100%;
   }
 
+  #program article:hover {
+    outline: 2px #fff solid;
+  }
+
   #program img {
     width: 50%;
     min-width: 60px;
@@ -774,6 +814,13 @@ section > hr {
     display: none;
   }
 
+  #headline.about-centered h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  #headline.about-centered h1 span {
+    font-size: 43px;
+  }
   #headline.about-centered h1 hr {
     width: 25px;
     margin: 15px auto;
