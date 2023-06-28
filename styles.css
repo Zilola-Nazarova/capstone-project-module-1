@@ -542,7 +542,8 @@ section > hr {
   #partners,
   #headline,
   #program,
-  #coaches {
+  #coaches,
+  #desktop-toolbar {
     padding-right: calc(20% - 120px);
     padding-left: calc(20% - 120px);
   }
@@ -581,8 +582,8 @@ section > hr {
     justify-content: flex-end;
     gap: 23px;
     height: 35px;
-    padding: 7px 0;
-    padding-right: 15%;
+    padding-top: 7px;
+    padding-bottom: 7px;
     background-color: #414246;
     font-size: 15px;
   }
