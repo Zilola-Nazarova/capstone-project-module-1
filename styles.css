@@ -189,7 +189,7 @@ section > hr {
 }
 
 #headline {
-  color: #353535;
+  color: #383838;
   padding: 105px 20px 85px 20px;
   margin-top: -75px;
   display: flex;
@@ -347,6 +347,116 @@ section > hr {
   display: none;
 }
 
+#about-page {
+  color: #383838;
+  text-align: center;
+}
+
+#about-page p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#about-page h2 {
+  line-height: 1.5em;
+}
+
+#headline.about-centered {
+  padding: 105px 30px 35px;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(#f0f0f0a1, rgba(245, 245, 245, 0.986)), url(./images/pngwing.com.png);
+}
+
+.about-centered h1 {
+  color: #ec5242;
+  mix-blend-mode: unset;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.about-centered .about-program {
+  padding: 20px 10px;
+  background-color: #fffffff5;
+  border: 3px #fff solid;
+  margin-top: 40px;
+  line-height: 1.8em;
+  font-size: 15px;
+}
+
+.about-centered .send-email {
+  margin-top: 30px;
+  line-height: 1.8em;
+}
+
+.send-email a {
+  font-size: 16px;
+  color: #383838;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+#logo-design,
+#past-bootcamps {
+  padding: 40px 30px 30px;
+  text-align: center;
+  position: relative;
+  line-height: 1.4em;
+}
+
+#about-page #logo-design hr,
+#about-page #past-bootcamps hr {
+  width: 25px;
+  margin: 15px auto;
+}
+
+#about-page #logo-design img {
+  width: 100%;
+  margin: 35px auto 10px;
+  border: 2px #eee solid;
+  padding: 25px 60px 30px;
+}
+
+#past-bootcamps ul {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#logo-design .grey-wide {
+  width: 100vw;
+  border: 1px solid #eee;
+  margin: 0 -30px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+#past-bootcamps li {
+  display: flex;
+  height: 45vw;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(./images/brooke-cagle--uHVRvDr7pg-unsplash.jpg);
+  background-size: 100%;
+}
+
+#past-bootcamps li:nth-child(2) {
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(./images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+}
+
+#past-bootcamps li:nth-child(3) {
+  background-image: linear-gradient(#9b1200be, #9b1200be), url(./images/annie-spratt-QckxruozjRg-unsplash.jpg);
+}
+
+#past-bootcamps a {
+  color: #fff;
+}
+
+#about-page #past-bootcamps h3 {
+  font-size: 26px;
+  margin-top: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   .program .join-tiace {
     display: none;
@@ -395,7 +505,7 @@ section > hr {
   }
 
   .desktop-navigation a {
-    color: #353535;
+    color: #383838;
   }
 
   .desktop-navigation a.active {
