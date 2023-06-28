@@ -98,7 +98,8 @@ h2 {
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   padding: 30px 20px;
   align-items: center;
   height: 140px;
@@ -119,7 +120,6 @@ footer > img {
 }
 
 footer > div {
-  width: 50vw;
   font-size: 14px;
 }
 
@@ -579,6 +579,8 @@ section > hr {
     padding-top: 40px;
     padding-bottom: 40px;
     align-items: center;
+    justify-content: center;
+    gap: 10%;
   }
 
   footer img {
@@ -762,10 +764,6 @@ section > hr {
   #past-bootcamps li {
     height: 200px;
     width: 45%;
-  }
-
-  footer > div {
-    width: 55vw;
   }
 
   footer.about {
