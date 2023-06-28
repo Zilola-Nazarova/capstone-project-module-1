@@ -690,10 +690,13 @@ section > hr {
     margin-top: 0;
   }
 
-  #coaches article.hidden,
+  #coaches article.hidden {
+    display: grid;
+  }
+
   #partners.hidden,
   footer.hidden {
-    display: grid;
+    display: flex;
   }
 
   #more {
