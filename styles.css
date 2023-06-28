@@ -312,6 +312,11 @@ section > hr {
   font-weight: 600;
 }
 
+#coaches article.hidden,
+#partners.hidden {
+  display: none;
+}
+
 #partners {
   background-color: #414246;
   display: flex;

@@ -42,6 +42,9 @@ for (let i = 0; i < coachesData.length; i += 1) {
 
   const coachCard = document.createElement('article');
   coachCard.id = `coach${i}`;
+  if (i !== 1 && i !== 0) {
+    coachCard.classList.add('hidden');
+  }
 
   const coachPhoto = document.createElement('img');
   coachPhoto.alt = `Coach#${i}`;
