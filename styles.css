@@ -630,7 +630,7 @@ section > hr {
     gap: 15px;
     padding: 20px 15px;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     width: unset;
     height: 100%;
   }
@@ -648,6 +648,7 @@ section > hr {
 
   #program h3 {
     font-size: 20px;
+    align-self: center;
   }
 
   #program hr {
