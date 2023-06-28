@@ -194,7 +194,7 @@ section > hr {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  background-image: url(./images/colors-mobile.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938)), url(./images/pngwing.com.png), linear-gradient(#f1f1f1b0, rgba(240, 240, 240, 0.856)), url(./images/pexels-李进-3172740.jpg);
+  background-image: url(./images/colors-mobile-85.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938)), url(./images/pngwing.com.png), linear-gradient(#f1f1f1b0, rgba(240, 240, 240, 0.856)), url(./images/pexels-李进-3172740.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: cover, cover, cover, cover, cover;
 }
@@ -611,8 +611,7 @@ section > hr {
   }
 
   #headline {
-    background-image: url(./images/colors-desktop.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938)), url(./images/pngwing.com.png), linear-gradient(#f1f1f1b0, rgba(240, 240, 240, 0.856)), url(./images/pexels-李进-3172740.jpg);
-
+    background-image: url(./images/colors-desktop-85.png), linear-gradient(#eeeeeed0, rgba(243, 243, 243, 0.938)), url(./images/pngwing.com.png), linear-gradient(#f1f1f1b0, rgba(240, 240, 240, 0.856)), url(./images/pexels-李进-3172740.jpg);
     margin-top: 0;
   }
 
