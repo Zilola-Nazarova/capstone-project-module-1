@@ -315,6 +315,12 @@ section > hr {
   background-size: 50%;
 }
 
+#logo-design hr,
+#past-bootcamps hr {
+  width: 30px;
+  margin: 15px auto;
+}
+
 #coaches article hr {
   display: block;
   border: 1px #d3d3d3 solid;
@@ -433,12 +439,6 @@ section > hr {
   text-align: center;
   position: relative;
   line-height: 1.4em;
-}
-
-#logo-design hr,
-#past-bootcamps hr {
-  width: 30px;
-  margin: 15px auto;
 }
 
 #about-page #logo-design img {
@@ -721,6 +721,10 @@ section > hr {
     padding-bottom: 70px;
   }
 
+  footer.about * {
+    color: #fff;
+  }
+
   #headline.about-centered * {
     width: 80%;
     margin-left: auto;
@@ -766,10 +770,6 @@ section > hr {
 
   footer.about {
     background-color: #383838;
-  }
-  
-  footer.about * {
-    color: #fff;
   }
 
   #about-page #partners.hidden {

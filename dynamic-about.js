@@ -8,7 +8,7 @@ function screenTest(e) {
     document.querySelector('footer img').src = './icons/logo-inverted.png';
   } else {
     document.querySelector('h1 hr').classList.add('hidden');
-    document.querySelector('#logo-design p').textContent = 'The Logo of TIACE Architecture Bootcamps 2021 was decided through a logo competition from 12.June to 24.July.'
+    document.querySelector('#logo-design p').textContent = 'The Logo of TIACE Architecture Bootcamps 2021 was decided through a logo competition from 12.June to 24.July.';
     document.querySelector('#partners').classList.remove('hidden');
     document.querySelector('footer img').src = './icons/logo3.png';
   }
