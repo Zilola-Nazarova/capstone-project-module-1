@@ -5,7 +5,7 @@ menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
   const restPage = document.querySelectorAll('nav, main, footer');
   restPage.forEach((element) => {
-    element.classList.toggle('hidden');
+    element.classList.add('hidden');
   });
 });
 
@@ -18,4 +18,10 @@ closeBtn.addEventListener('click', () => {
   restPage.forEach((element) => {
     element.classList.toggle('hidden');
   });
+  const restOfMobile = document.querySelectorAll('footer, #partners, #coaches article:not(#coach0, #coach1)');
+  const moreBtn = document.querySelector('#more');
+  restOfMobile.forEach((element) => {
+    element.classList.add('hidden');
+  });
+  moreBtn.classList.remove('hidden');
 });

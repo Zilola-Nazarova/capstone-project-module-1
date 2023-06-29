@@ -2,7 +2,7 @@ const restOfMobile = document.querySelectorAll('footer, #partners, #coaches arti
 const moreBtn = document.querySelector('#more');
 moreBtn.addEventListener('click', () => {
   restOfMobile.forEach((element) => {
-    element.classList.toggle('hidden');
+    element.classList.remove('hidden');
   });
-  moreBtn.classList.toggle('hidden');
+  moreBtn.classList.add('hidden');
 });
