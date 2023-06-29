@@ -492,7 +492,7 @@ section > hr {
 }
 
 .grey-wide {
-  width: 100vw;
+  width: 100%;
   border: 1px solid #eee;
 }
 
@@ -779,12 +779,6 @@ section > hr {
   footer.about {
     padding-right: calc(20% - 120px);
     padding-left: calc(20% - 120px);
-  }
-
-  .grey-wide {
-    position: static;
-    width: 100vw;
-    margin: 0;
   }
 
   #about-page #logo-design img {
