@@ -796,8 +796,9 @@ section > hr {
   }
 
   #past-bootcamps li {
-    height: 200px;
+    height: 17vw;
     width: 45%;
+    font-size: 20px;
   }
 
   footer.about {
