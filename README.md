@@ -1,7 +1,7 @@
 <div align="center">
 <h3><b>Capstone Project 1</b></h3>
 </div>
-In this campstone project I create a website for an architecture bootcamp
+This is an Architecture Bootcamp website. Visitors can learn more about the coaches of the Bootcamp, past events and other essential information about the Bootcamp. Built with HTML/CSS.
 
 <a name="readme-top"></a>
 
